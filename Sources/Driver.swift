@@ -7,6 +7,7 @@ public protocol Driver {
 	func upsert(table table: String, items: [[String: String]])
 	func exists(table table: String, filters: [Filter]) -> Bool
 	func count(table table: String, filters: [Filter]) -> Int
+	func getLastId(table table: String) -> String?
 
 	func beginTransaction()
 	func rollback()

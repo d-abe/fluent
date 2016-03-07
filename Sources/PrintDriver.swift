@@ -107,6 +107,10 @@ class PrintDriver: Driver {
 		}
 	}
 
+	func getLastId(table table: String) -> String? {
+		return nil
+	}
+
 	func beginTransaction() {
 		// nop
 	}

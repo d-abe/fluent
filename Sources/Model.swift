@@ -23,8 +23,8 @@ public protocol Model {
 
 extension Model {
 
-	public func save() {
-		Query().save(self)
+	public func save() -> String? {
+		return Query().save(self)
 	}
 
 	public func delete() {
