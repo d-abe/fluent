@@ -131,6 +131,18 @@ class MemoryDriver: Driver {
 		return count
 	}
 
+	func beginTransaction() {
+		// nop
+	}
+
+	func rollback() {
+		// nop
+	}
+
+	func commit() {
+		// nop
+	}
+
 	/*func query(query: Query) -> Any? {
 		print("Query")
 

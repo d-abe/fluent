@@ -107,4 +107,15 @@ class PrintDriver: Driver {
 		}
 	}
 
+	func beginTransaction() {
+		// nop
+	}
+
+	func rollback() {
+		// nop
+	}
+
+	func commit() {
+		// nop
+	}
 }
