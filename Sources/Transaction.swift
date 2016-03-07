@@ -1,10 +1,8 @@
-//
-// Created by Daijiro Abe on 2016/03/04.
-//
-
 import Foundation
 
 public class Transaction {
+
+	internal init() {}
 
     public func begin() {
         Database.driver.beginTransaction()
