@@ -131,6 +131,10 @@ class MemoryDriver: Driver {
 		return count
 	}
 
+	func getLastId(table table: String) -> String? {
+		return nil
+	}
+
 	func beginTransaction() {
 		// nop
 	}

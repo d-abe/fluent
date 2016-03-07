@@ -77,13 +77,15 @@ public class Query<T: Model> {
 
 	/* Internal Casts */
 	///Inserts or updates the entity in the database.
-	func save(model: T) {
+	func save(model: T) -> String? {
 		let data = model.serialize()
 
 		if let id = model.id {
 			self.filter("id", id).update(data)
+			return id
 		} else {
 			self.insert(data)
+			return Database.driver.getLastId(table: self.table)
 		}
 	}
 
